@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@media all {
+	h1 {
+		font-size: 24pt;
+		line-height: 32pt;
+		font-weight: bold;
+		margin: 0 0 40px 0;
+		border-radius: 0 0 10% 10%;
+		border-bottom: 1px solid #DDD;
+	}
+	body {
+		background: url('../image/bg.jpg');
+	}
+	body * {
+		font-family: 'Times New Roman';
+		word-break: break-word;
+	}
+	a:hover { text-decoration: none; }
+	h1 * { display: block; }
+	h1 .portfolio.text {
+		font-size: 10pt;
+		line-height: 12pt;
+	}
+	.categories { margin-bottom: 30px; }
+	.categories .title { display: block; }
+	.categories label { margin-right: 0; }
+
+	.project.template {
+		display: none !important;
+	}
+	.project {
+		border-bottom: 1px;
+		border-bottom-style: dashed;
+	}
+	.project .list-item dt {
+		width: 150px;
+		padding: 3px;
+		text-align: center;
+		margin-right: 10px;
+		background-color: #EEE;
+		border: 1px solid #AAA;
+		border-radius: 0 5px 5px 0;
+	}
+	.project .template {
+		display: none;
+	}
+	.project .carousel {
+		height: 100%;
+	}
+
+
+	.back-to-top {
+		border: 1px solid #CCC;
+		padding: 10px 20px;
+		border-radius: 10px;
+		background-color: #FEFEFE;
+		position: fixed;
+		width: 120px;
+		right: 10px;
+		bottom: 10px;
+		font-size: 10pt;
+	}
+
+}

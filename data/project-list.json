@@ -1,0 +1,473 @@
+{
+	"j001" : {
+		"title" : "Temairazu",
+		"year" : "2018",
+		"url" : "https://www.temairazu.com/service/about",
+		"language" : ["JavaScript","PHP","CSS","MySQL"],
+		"features" : ["プラン一元管理機能", "楽天トラベル / じゃらん / るるぶトラベル　など国内サイトとの接続"],
+		"description" : "「手間いらず」は 複数の宿泊予約サイトを一元管理するホテル・旅館のための宿泊予約サイトコントローラー・チャネルマネージャーです。",
+		"client" : "Temairazu, Inc.",
+		"images" : [
+			"1.png",
+			"2.png",
+			"3.png",
+			"4.png",
+			"5.png"
+		]
+	},
+	"p001" : {
+		"title" : "東方饌黔天下<br/>公式サイト",
+		"year" : "2012",
+		"url" : "http://www.ocg.url.tw",
+		"url_status" : "public",
+		"features" : ["メニュー管理","ニュース管理"],
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"description" : "レストランのサイト",
+		"client" : "東方饌黔天下",
+		"images" : [
+			"1.jpg",
+			"2.png",
+			"3.png",
+			"4.png",
+			"5.png",
+			"6.png"
+		]
+	},
+	"p002" : {
+		"title" : "原住民族族語教材－文化編",
+		"year" : "2014",
+		"url_status" : "private",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"features" : ["教材編集"],
+		"description" : "原住民族族語教材のオンライン編集システム",
+		"client" : "Center for Aboriginal Languages Cultures and Education",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg"
+		]
+	},
+	"p007" : {
+		"title" : "族語E楽園",
+		"url" : "http://klokah.tw/",
+		"year" : "2015",
+		"url_status" : "public",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"features" : [
+			"<a href=\"http://web.klokah.tw\" target=\",_blank\",>オンライン模擬試験</a>"
+		],
+		"description" : "原住民語を学ぶと言えば、族語E楽園です",
+		"client" : "台湾原住民族委員会 Council of Indigenous Peoples",
+		"images" : [
+			"1.jpg",
+			"2.png",
+			"3.png",
+			"4.png",
+			"5.png",
+			"6.png",
+			"7.png"
+		]
+	},
+	"p009" : {
+		"title" : "原住民族族語教材－九階教材",
+		"year" : "2014",
+		"url_status" : "private",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"description" : "原住民族族語教材のオンライン編集システム",
+		"client" : "Center for Aboriginal Languages Cultures and Education",
+		"features" : ["教材編集","レポート作成","編集者管理"],
+		"images" : [
+			"1.jpg",
+			"2.png",
+			"3.jpg"
+		]
+	},
+	"p014" : {
+		"title" : "有限会社 EchoMusic<br/>権利金管理システム",
+		"year" : "2017",
+		"url_status" : "private",
+		"features" : [
+			"歌曲管理",
+			"授権管理",
+			"レポート作成",
+			"授権書作成"
+		],
+		"language" : [
+			"PHP",
+			"MySQL",
+			"JavaScript",
+			"CSS"
+		],
+		"description" : "歌曲の授権管理、曲利用情報の分析",
+		"client" : "EchoMusic",
+		"images" : [
+			"1.png",
+			"2.png",
+			"3.png",
+			"4.png",
+			"5.png",
+			"6.png",
+			"7.png",
+			"8.png"
+		]
+	},
+	"p017" : {
+		"code" : "p017",
+		"title" : "朗聲四起",
+		"url" : "https:/alcd-con.tw/alr/",
+		"year" : "2016",
+		"url_status" : "public",
+		"language" : [
+			"PHP",
+			"MySQL",
+			"JavaScript",
+			"CSS"
+		],
+		"features" : [
+			"文章編著",
+			"文章検索",
+			"文章ランダム　ピック",
+			"編集記録（特定バージョンに戻れます）"
+		],
+		"description" : "台湾の原住民語の族語文章を編著、検索、管理するサイト",
+		"client" : "Center for Aboriginal Languages Cultures and Education",
+		"images" : [
+			"1.png",
+			"2.jpg",
+			"3.jpg",
+			"5.jpg",
+			"6.jpg",
+			"7.jpg",
+			"8.png"
+		]
+	},
+	"p018" : {
+		"title" : "ALCD Website",
+		"url" : "http://alcd.tw",
+		"year" : "2013",
+		"url_status" : "public",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"description" : "政治大学原住民族研究センターの公式サイト",
+		"client" : "政治大学原住民族研究センター ALCD",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg"
+		]
+	},
+	"p020" : {
+		"title" : "原住民族族語教材－生活会話編",
+		"year" : "2014",
+		"url_status" : "private",
+		"language" : ["Action Script 3"],
+		"features" : ["教材編集"],
+		"description" : "原住民族族語教材のオンライン編集システム",
+		"client" : "Center for Aboriginal Languages Cultures and Education",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg"
+		]
+	},
+	"p025" : {
+		"title" : "九階教材学生手冊<br/>レイアウト編集システム",
+		"url" : "http://nine-print.alcd-con.tw",
+		"year" : "2017",
+		"url_status" : "public",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"features" : [
+			"レイアウト編集",
+			"コンポネント編集",
+			"印刷用ファール作成",
+			"WYSIWYG"
+		],
+		"description" : "台湾原住民語教科書の編集システム（レイアウト編集用）",
+		"client" : ",(台湾)国立政治大学原住民族研究センター ALCD",
+		"images" : [
+			"1.png",
+			"2.png",
+			"3.png",
+			"4.png",
+			"5.png",
+			"6.png",
+			"7.png",
+			"8.png",
+			"9.png"
+		]
+	},
+	"p026" : {
+		"title" : "原住民語単語試合システム",
+		"year" : "2016",
+		"url" : "https://drive.google.com/open?id=0B0BtWc_dkYqVanJiTHd0bkhZaEU",
+		"url_status" : "download",
+		"features" : ["問題作成（選択肢の生成、穴埋め）","点数計算","対戦チーム管理"],
+		"language" : ["Action Script 3"],
+		"description" : "原住民語試合用システム",
+		"client" : "台湾原住民族委員会 Council of Indigenous Peoples",
+		"images" : [
+			"1.png",
+			"2.png",
+			"3.png",
+			"4.png"
+		]
+	},
+	"p028" : {
+		"title" : "JP Huang Studio",
+		"url" : "http://jphuang.com",
+		"year" : "2013",
+		"url_status" : "public",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"description" : "台湾で有名なMV監督の個人サイト",
+		"client" : "JungPing Huang",
+		"images" : [
+			"1.jpg",
+			"2.png",
+			"3.png"
+		]
+	},
+	"p030" : {
+		"title" : "原住民語絵本センター",
+		"url" : "http://pbc.klokah.tw/book/online/index.php?id=49",
+		"year" : "2016",
+		"url_status" : "public",
+		"language" : ["PHP","MySQL","JavaScript","CSS"],
+		"features" : ["絵本","多言語対応"],
+		"description" : "原住民語のオンライン絵本、文字と音声が多言語対応あり",
+		"client" : "台湾原住民族委員会 Council of Indigenous Peoples",
+		"images" : [
+			"1.jpg",
+			"2.jpg"
+		]
+	},
+	"p031": {
+		"title" : "台湾中央銀行<br/>通貨デジタル博物館",
+		"url" : "http://museum.cbc.gov.tw/",
+		"year" : "2014",
+		"url_status" : "public",
+		"language" : [
+			"JavaScript",
+			"CSS"
+		],
+		"description" : "台湾の紙幣と硬貨を紹介するサイト",
+		"client" : "Central Bank of Taiwan",
+		"images" : [
+			"1.jpg",
+			"2.png",
+			"3.png",
+			"4.jpg",
+			"5.jpg",
+			"6.jpg",
+			"7.jpg",
+			"8.jpg",
+			"9.jpg",
+			"10.jpg",
+			"11.jpg",
+			"12.jpg",
+			"13.jpg"
+		]
+	},
+	"p032" : {
+		"title" : "動植物知識王",
+		"year" : "2014",
+		"language" : ["Action Script 3"],
+		"features" : ["ゲーム"],
+		"description" : "動植物に関するミニゲーム",
+		"client" : "(台湾)国立台中科学博物館",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg",
+			"6.jpg",
+			"7.jpg",
+			"8.jpg",
+			"9.jpg",
+			"10.jpg",
+			"11.jpg",
+			"12.jpg",
+			"13.jpg",
+			"14.jpg",
+			"15.jpg",
+			"16.jpg",
+			"17.jpg",
+			"18.jpg",
+			"19.jpg",
+			"20.jpg",
+			"21.jpg",
+			"22.jpg",
+			"23.jpg",
+			"24.jpg",
+			"25.jpg",
+			"26.jpg",
+			"27.jpg",
+			"28.jpg",
+			"29.jpg",
+			"30.jpg",
+			"31.jpg",
+			"32.jpg",
+			"33.jpg",
+			"34.jpg",
+			"35.jpg",
+			"36.jpg",
+			"37.jpg",
+			"38.jpg",
+			"39.jpg",
+			"40.jpg",
+			"41.jpg",
+			"42.jpg",
+			"43.jpg",
+			"44.jpg",
+			"45.jpg",
+			"46.jpg",
+			"47.jpg",
+			"48.jpg",
+			"49.jpg",
+			"50.jpg",
+			"51.jpg",
+			"52.jpg"
+		]
+	},
+	"p035": {
+		"title" : "族語辭典",
+		"url" : "https://www.southark.tw/dictionary/view/index.php?dict=56&id=76803",
+		"year" : "2017",
+		"url_status" : "public",
+		"language" : [
+			"PHP",
+			"MySQL",
+			"JavaScript",
+			"CSS"
+		],
+		"features" : [
+			"録音",
+			"単語編集",
+			"他辞書参考"
+		],
+		"description" : "台湾の原住民語の辞書編集サイト",
+		"client" : "台湾原住民族委員会 Council of Indigenous Peoples",
+		"images" : [
+			"1.jpg",
+			"2.jpg"
+		]
+	},
+	"p040" : {
+		"title" : "台湾中央銀行<br/>Virtual Money Museum",
+		"url" : "http://museum.cbc.gov.tw/vr/museum.aspx",
+		"year" : "2013",
+		"url_status" : "public",
+		"language" : ["Action Script 3"],
+		"description" : "台湾の通貨を紹介するサイート ( FLASH Ver. )",
+		"client" : "Central Bank of Taiwan",
+		"images" : [
+			"1.png",
+			"2.png",
+			"3.png"
+		]
+	},
+	"p043" : {
+		"title" : "古画シリーズ - 祥和鳥",
+		"year" : "2012",
+		"language" : ["Action Script 3"],
+		"features" : ["センサー（マイクロフォン）","対話式"],
+		"description" : "大きい騒音を起きれば、鳥が飛び出します。",
+		"client" : "(台湾)国立故宮博物院",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg"
+		]
+	},
+	"p044" : {
+		"title" : "古画シリーズ - 早春図",
+		"year" : "2012",
+		"language" : ["Action Script 3"],
+		"features" : ["センサー（マイクロフォン）","対話式"],
+		"description" : "画に気を吐くと、雲が消えて、龍が現れます。",
+		"client" : "(台湾)国立故宮博物院",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg"
+		]
+	},
+	"p045" : {
+		"title" : "古画シリーズ - 四季",
+		"year" : "2012",
+		"language" : ["Action Script 3"],
+		"features" : ["センサー（マイクロフォン）","対話式"],
+		"description" : "大きい騒音を起きれば、季節が変わります。",
+		"client" : "(台湾)国立故宮博物院",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg"
+		]
+	},
+	"p046" : {
+		"code" : "p046",
+		"title" : "活字工坊",
+		"year" : "2014",
+		"language" : ["Action Script 3"],
+		"features" : ["ゲーム"],
+		"description" : "名言を選んで、文字を排列して、印刷します。",
+		"client" : "(台湾)国立台中図書館",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg",
+			"6.jpg",
+			"7.jpg",
+			"8.jpg",
+			"9.jpg",
+			"10.jpg",
+			"11.jpg",
+			"12.jpg",
+			"13.jpg",
+			"14.jpg",
+			"15.jpg",
+			"16.jpg",
+			"17.jpg",
+			"18.jpg",
+			"19.jpg"
+		]
+	},
+	"p047" : {
+		"code": "p047",
+		"title": "漢字の造字ルール",
+		"year": "2014",
+		"language": [
+			"Action Script 3"
+		],
+		"features": [
+			"ゲーム"
+		],
+		"description": "漢字のルールに関するミニテスト",
+		"client": "(台湾)国立台中図書館",
+		"images" : [
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg",
+			"6.jpg",
+			"7.jpg",
+			"8.jpg",
+			"9.jpg",
+			"10.jpg",
+			"11.jpg",
+			"12.jpg"
+		]
+	}
+}
