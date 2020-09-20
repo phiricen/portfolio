@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<h1 id="h1" class="h1 text-center">
+			<h1 id="h1" class="h1 text-center pt-5 pb-3">
 				<a href="./">
 				    <p>Chang Yu Chen</p>
                         <p>
@@ -33,16 +33,19 @@
 						<div class="title">【　フィルター　】</div>
 						<div class="d-flex">
 							<div>
-								<button class="btn btn-primary m-1" name="filter" value="php">PHP</button>
+								<button class="btn btn-primary m-1" name="filter" value="PHP">PHP</button>
 							</div>
 							<div>
-								<button class="btn btn-primary m-1" name="filter" value="css">CSS</button>
+								<button class="btn btn-primary m-1" name="filter" value="CSS">CSS</button>
 							</div>
 							<div>
-								<button class="btn btn-primary m-1" name="filter" value="mysql">MySQL</button>
+								<button class="btn btn-primary m-1" name="filter" value="MySQL">MySQL</button>
 							</div>
 							<div>
-								<button class="btn btn-primary m-1" name="filter" value="js">Javascript</button>
+								<button class="btn btn-primary m-1" name="filter" value="JavaScript">JavaScript</button>
+							</div>
+							<div>
+								<button class="btn btn-primary m-1" name="filter" value="Action Script 3">Action Script 3</button>
 							</div>
 						</div>
 					</div>
@@ -50,8 +53,17 @@
 
 					<div id="projects">
 
-						<div class="project template d-flex py-4 my-4">
-							<div class="col-6">
+						<div class="project template flex-wrap py-4 my-4">
+							<div class="col-12 col-md-6 mb-3 mb-md-0">
+								<a href="#j001" class="h4 text-dark title d-block"><b></b></a>
+								<div class="features">
+									<dl class="list-item template d-flex mb-1">
+										<dt class="col-4"></dt>
+										<dd class="col-8 mb-0"></dd>
+									</dl>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
 								<div id="" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators"></ol>
 									<div class="carousel-inner"></div>
@@ -65,15 +77,6 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-6">
-								<a href="#j001" class="h4 text-dark title d-block"><b></b></a>
-								<div class="features">
-									<dl class="list-item template d-flex mb-1">
-										<dt class="col-4"></dt>
-										<dd class="col-8 mb-0"></dd>
-									</dl>
-								</div>
-							</div>
 						</div>
 
 					</div>
@@ -81,7 +84,7 @@
 				</div>
 			</div>
 
-            <a class="back-to-top text-center" href="#h1">Back To Top</a>
+            <a class="back-to-top text-center btn btn-light border" onclick="backToTop()">Back To Top</a>
         </div>
     </body>
 </html>

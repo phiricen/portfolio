@@ -29,6 +29,7 @@
 		display: none !important;
 	}
 	.project {
+		display: flex;
 		border-bottom: 1px;
 		border-bottom-style: dashed;
 	}
@@ -50,12 +51,7 @@
 
 
 	.back-to-top {
-		border: 1px solid #CCC;
-		padding: 10px 20px;
-		border-radius: 10px;
-		background-color: #FEFEFE;
 		position: fixed;
-		width: 120px;
 		right: 10px;
 		bottom: 10px;
 		font-size: 10pt;

@@ -10,43 +10,40 @@ $(function(){
 		interval: 10000
 	})
 
-	return;
-	$('.categories label').click(onFilt);
+	initFilter();
 
-	function onFilt(){
-		var selecteds = [];
-		$.each($('.categories input:checked'), function(){
-			selecteds.push($(this).val());
-		});
-		$.each($('.project'), function(){
-			var matched = false;
-			var langs = $(this).attr('used-langs');
-			for ( var i = 0 ; i < selecteds.length; i++ ){
-				if ( langs.indexOf(selecteds[i]) > -1 ){
-					matched = true;
-					/*
-					$.each($(this).find('.wall.lang').children(), function(){
-						if($(this).text() == selecteds[i]){
-							console.log('AA');
-						}
-					});
-					*/
-				}
-			}
-			if(matched){
-				$(this).addClass('matched');
+});
+
+function initFilter(){
+	$('button[name="filter"]').click(onFilter);
+
+	let filter_types = [
+		'PHP',
+		'CSS',
+		'MySQL',
+		'JavaScript',
+		'Action Script 3'
+	];
+
+	for (let type in filter_types){
+		let amount = $('.project[data-used-lang*="' + filter_types[type] + '"]').length;
+		let el_button = $('button[name="filter"][value="'+filter_types[type]+'"]');
+		el_button.html(el_button.text() + ' <small>( ' + amount + ' )</small>');
+	}
+
+	function onFilter(e){
+		$('.project').map(function(el){
+			let used_lang = this.getAttribute('data-used-lang');
+			let target_lang = e.target.value;
+			if (used_lang && used_lang.indexOf(target_lang) !== -1){
+				this.classList.remove('d-none');
 			}
 			else {
-				$(this).removeClass('matched');
-				$(this).find('.wall.lang').removeClass('matched');
+				this.classList.add('d-none');
 			}
 		});
-		$('.p-ball').remove();
-		$.each($('.project.matched'), function(i){
-			$(this).css('opacity',0).delay(i*500).animate({opacity:1}, 500);
-		});
 	}
-});
+}
 
 /**
  * Get portfolio data
@@ -211,113 +208,10 @@ function addProject(code, data){
 	return el;
 }
 
-/*
-    function addProject($p){
-        $private_site = 'プライベート　サイト　(　面接の時ご説明させていただきます　)';
-    	$private_site = 'プライベート　サイト';
-    	$href = isset($p->url) ? ' href="'.$p->url.'" target="_blank"' : '';
-    	$langs = '';
-		if(isset($p->language)){
-			foreach ($p->language as $key => $l) {
-				$langs.= $key == 0 ? '' : ' ';
-				$langs.= $l;
-			}
-		}
-    	$html = '<div id="'.$p->code.'" class="project row matched" used-langs="'.$langs.'" img-idx="1">';
-        $html.=     '<div class="col-md-6">';
-        $html.=        '<div class="preview">';
-
-        $amt = 0;
-        $images = array();
-        do {
-            $amt++;
-            $png = "image/".$p->code."/".$amt.".png";
-            $jpg = "image/".$p->code."/".$amt.".jpg";
-            if(is_file($png)){
-                array_push($images, $png);
-            }
-            else if(is_file($jpg)){
-                array_push($images, $jpg);
-            }
-        }
-        while(is_file($png)||is_file($jpg));
-
-        $html.=             '<div class="dots">';
-        foreach ($images as $i => $img) {
-            $html.= '<a class="dot" dot-id="'.($i+1).'"></a>';
-        }
-        $html.=             '</div>';
-        $html.=             '<div class="images">';
-        $html.=                 '<div class="thumbnail">';
-        foreach ($images as $i => $img) {
-            $hidden = $i == 0 ? '' : ' hidden';
-            $html.= '<a class="'.$hidden.'" href="'.$img.'" target="_blank" title="クリックで拡大表示">';
-            $html.=     '<img src="'.$img.'" />';
-            $html.= '</a>';
-        }
-        $html.=                '</div>';
-        $html.=             '</div>';
-        $html.=         '</div>';
-    	$html.= 	'</div>';
-    	$html.= 	'<div class="col-md-6 content">';
-        $html.=         '<div class="title"><a href="#'.$p->code.'" class="title">'.$p->title.'</a></div>';
-
-        if(isset($p->url_status)){
-            $html.= '<div class="wall">';
-            $html.=     '<div class="title brick">サイト</div>';
-            if ( $p->url_status == "public" ){
-                $html.= '<a class="value brick" href="'.$p->url.'" target="_blank"><span>'.$p->url.'</span></a>';
-            }
-            else if ( $p->url_status == "private" ){
-            	$html.=	'<a class="value brick private"><span>'.$private_site.'</span></a>';
-            }
-            else if ( $p->url_status == "download" ){
-            	$html.=	'<a class="value brick" href="'.$p->url.'" target="_blank">ダウンロード（音声なしバージョン）</a>';
-            }
-            $html.= '</div>';
-        }
-
-    	if(isset($p->year)){
-	    	$html.= '<div class="wall">';
-	    	$html.= 	'<div class="title brick">制作年代</div>';
-	    	$html.= 	'<div class="value brick">'.$p->year.'</div>';
-	    	$html.= '</div>';
-    	}
-    	if(isset($p->client)){
-	    	$html.= '<div class="wall">';
-	    	$html.= 	'<div class="title brick">依頼主・雇い主</div>';
-	    	$html.= 	'<div class="value brick">'.$p->client.'</div>';
-	    	$html.= '</div>';
-    	}
-    	if(isset($p->language)){
-	    	$html.= '<div class="wall lang">';
-	    	$html.= 	'<div class="title brick">利用言語</div>';
-	    	$html.= 	'<div class="value brick">';
-	    	foreach ( $p->language as $k=> $l ) {
-	    		$html.= $k == 0 ? '' : '<span>, </span>';
-	    		$html.= '<span>'.$l.'</span>';
-	    	}
-	    	$html.= 	'</div>';
-	    	$html.= '</div>';
-    	}
-    	if(isset($p->special)){
-	    	$html.= '<div class="wall">';
-	    	$html.= 	'<div class="title brick">開発機能</div>';
-	    	$html.= 	'<div class="value brick">';
-	    	foreach ( $p->special as $s ) {
-	    		$html.= '<p>'.$s.'</p>';
-	    	}
-	    	$html.=		'</div>';
-	    	$html.= '</div>';
-    	}
-    	if(isset($p->description)){
-	    	$html.= '<div class="wall">';
-	    	$html.= 	'<div class="title brick">紹介</div>';
-	    	$html.= 	'<div class="value brick"><span>'.$p->description.'</span></div>';
-	    	$html.= '</div>';
-    	}
-    	$html.= 	'</div>';
-    	$html.= '</div>';
-    	return $html;
-    }
- */
+function backToTop(){
+	window.scroll({
+		top: 0,
+		left: 0,
+		behavior: 'smooth'
+	});
+}
